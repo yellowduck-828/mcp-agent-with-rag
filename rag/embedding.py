@@ -9,10 +9,6 @@ from sentence_transformers import SentenceTransformer
 
 @dataclass
 class Embedder:
-    """
-    本地 embedding 模型封装（CPU 也能跑）。
-    默认模型：BAAI/bge-small-zh-v1.5（中文效果好、速度快、模型小）
-    """
 
     model_name: str = "BAAI/bge-small-zh-v1.5"
 
