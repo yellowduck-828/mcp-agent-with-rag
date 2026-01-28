@@ -21,3 +21,8 @@ workspace/
 
 rag/data/
 
+
+backend/chat_sessions.json
+backend/*.json
+
+
