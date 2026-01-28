@@ -1,0 +1,23 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+.venv/
+
+# Secrets
+.env
+
+# RAG index / cache
+rag/index/
+RAG/index/
+vector_index/
+
+# Cache
+.uv-cache/
+
+
+workspace/
+
+rag/data/
+
