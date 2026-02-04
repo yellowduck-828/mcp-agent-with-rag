@@ -26,7 +26,7 @@ Agent 可以在对话过程中按需调用不同类型的工具来完成任务�
 
 Agent 可以直接调用项目中实现的本地工具，统一放置在 `tools/` 目录下，由 MCP Server 注册后暴露给 Agent 使用。
 
-当前已实现的本地工具包括：
+当前已实现的本地工具有：
 
 - `cookbook_rag.py`  
   基于本地向量索引的 RAG 检索工具（以菜谱数据为示例）。
@@ -114,9 +114,9 @@ DEEPSEEK_API_BASE=https://api.deepseek.com/v1   # 可选，自定义网关
 AMAP_MAPS_API_KEY=你的高德key      # 可选，用于 amap mcp server
 ```
 
-### 首次运行步骤
+### 运行步骤
 1. 创建/激活虚拟环境并安装依赖。
-2. 配置 `.env`（至少两项必需 key）。
+2. 配置 `.env`。
 3. 构建菜谱 RAG 索引（首次或数据更新后）：
    ```bash
    python -m rag.index_construction
